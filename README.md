@@ -1,8 +1,8 @@
 in this we can add notes
 edit and delete notes
-[Screenshot (307)](https://github.com/user-attachments/assets/8b6c6ca1-92e8-471a-a36f-51232dcb1d44)
-![Screenshot (306)](https://github.com/user-attachments/assets/e6a5573c-ff6f-4195-9c05-8c71eb3a3a6e)
-![Screenshot (305)](https://github.com/user-attachments/assets/2130e63c-6857-481e-ba3b-e0110d6b22bb)
-![Screenshot (304)](https://github.com/user-attachments/assets/0d71b5de-4863-4290-b294-1be4c8e8e372)
-![Screenshot (303)](https://github.com/user-attachments/assets/70bba1a6-fd81-48eb-8367-a8076f20b86c)
-![Screenshot (302)](https://github.com/user-attachments/assets/9071811b-6c9b-4745-95ad-cdb1440ba194)
+![Screenshot (302)](https://github.com/user-attachments/assets/87d5658b-908f-4c28-a753-3d01d083aa88)
+![Screenshot (303)](https://github.com/user-attachments/assets/4cee5f1b-880d-4f93-96f3-6e27beec40f7)
+![Screenshot (304)](https://github.com/user-attachments/assets/ea12f658-3444-403e-873e-a193ca335732)
+![Screenshot (305)](https://github.com/user-attachments/assets/2a3a63c1-46be-4a25-ac65-16dcc1007125)
+![Screenshot (306)](https://github.com/user-attachments/assets/77f5b3b2-5eab-4060-aa22-57707b9aca74)
+![Screenshot (307)](https://github.com/user-attachments/assets/2ff114a6-4f22-400c-a5b7-b1183876e9af)
