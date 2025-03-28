@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f1dc;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background-color: #AFC8AD;
+            padding: 15px;
+            text-align: right;
+        }
+        .navbar a {
+            color: black;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .container h1 {
+            margin-bottom: 20px;
+        }
+        .note-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+            padding: 10px;
+        }
+        .note-item {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s;
+        }
+        .note-item:hover {
+            transform: translateY(-5px);
+        }
+        .note-item strong {
+            font-size: 1.2em;
+            background-color: #FFAD84;
+            display: block;
+            margin-bottom: 5px;
+        }
+        .note-item p {
+            font-size: 0.9em;
+            color: #555;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .btn-create {
+            background-color: #FFAD84;
+            color: white;
+        }
+        .btn-logout {
+            background-color: #AFC8AD;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#">About</a>
+        <a href="#">Notes</a>
+        <a href="#">Account</a>
+        <a href="{% url 'logout' %}" class="btn btn-logout">Logout</a>
+    </div>
+    <div class="container">
+        <h1>Your Notes</h1>
+        <p>Welcome, {{ user.user_name }}!</p>
+        <div class="note-list">
+            {% for note in notes %}
+                <a href="{% url 'edit_note' note.note_id %}" class="note-link">
+                 <div class="note-item">
+                    <strong>{{ note.note_title }}</strong>
+                    <p>{{ note.note_content }}</p>
+                 </div>
+            {% empty %}
+                <p>No notes available.</p>
+            {% endfor %}
+        </div>
+        <a href="{% url 'create_note' %}" class="btn btn-create">Create Note</a>
+    </div>
+</body>
+</html>
